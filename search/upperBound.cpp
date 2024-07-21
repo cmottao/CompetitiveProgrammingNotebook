@@ -3,7 +3,7 @@ int a[N];
 
 // Time complexity: O(log(e - b))
 int upperBound(int b, int e, int t) {
-    int l = 0, r = e;
+    int l = b, r = e;
 
     while(r > l) {
         int m = (l + r) / 2;
