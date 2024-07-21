@@ -1,3 +1,3 @@
 # CompetitiveProgrammingNotebook
 
-Implementations of algorithms and data structures used in competitive programming.
+Implementations of algorithms, data structures and more used in competitive programming.
