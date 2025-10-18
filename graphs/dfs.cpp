@@ -1,12 +1,19 @@
+/*
+Description:
+    Depth-First Search (DFS) on a graph.
+    Visits all nodes reachable from the source node.
+Time Complexity: O(v + e)
+Space Complexity: O(v)
+*/
+
 const int N = 1e5;
+
 vector<int> g[N];
-bool vis[N];
+bool vis[N]; // Must be initialized with false
 
-// Time complexity: O(n)
 void dfs(int u) {
-    vis[u] = 1;
-
-    for(int s : g[u]) {
-        if(!vis[s]) dfs(s);
+    vis[u] = true;
+    for (int v : g[u]) {
+        if (!vis[v]) dfs(v);
     }
 }
